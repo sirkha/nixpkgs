@@ -1,5 +1,5 @@
 { stdenv, fetchurl, pkgconfig
-, gtk2-x11, glib, curl, goocanvas, intltool
+, gtk2-x11, glib, curl, goocanvas100, intltool
 }:
 
 let
@@ -13,7 +13,7 @@ stdenv.mkDerivation {
     sha256 = "18ym71r2f5mwpnjcnrpwrk3py2f6jlqmj8hzp89wbcm1ipnvxxmh";
   };
 
-  buildInputs = [ curl glib gtk2-x11 goocanvas ];
+  buildInputs = [ curl glib gtk2-x11 goocanvas100 ];
   nativeBuildInputs = [ pkgconfig intltool ];
 
   meta = with stdenv.lib; {

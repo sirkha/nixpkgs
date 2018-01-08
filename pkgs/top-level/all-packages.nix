@@ -8654,7 +8654,9 @@ with pkgs;
     python = python2;
   };
 
-  goocanvas = callPackage ../development/libraries/goocanvas { };
+  goocanvas100 = callPackage ../development/libraries/goocanvas/1.0.nix { };
+  goocanvas204 = callPackage ../development/libraries/goocanvas/2.0.nix { };
+  goocanvas = callPackage ../development/libraries/goocanvas/2.0.nix { };
 
   google-gflags = callPackage ../development/libraries/google-gflags { };
 
