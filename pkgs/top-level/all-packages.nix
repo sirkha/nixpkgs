@@ -16154,6 +16154,8 @@ with pkgs;
   notion = callPackage ../applications/window-managers/notion { };
 
   openshift = callPackage ../applications/networking/cluster/openshift { };
+  
+  oregano = callPackage ../applications/science/electronics/oregano { };
 
   oroborus = callPackage ../applications/window-managers/oroborus {};
 
